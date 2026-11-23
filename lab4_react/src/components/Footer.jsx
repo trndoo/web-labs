@@ -36,7 +36,7 @@ function Footer() {
 
   return (
     <footer className="bg-slate-800 dark:bg-slate-950 text-slate-300 text-sm p-4 mt-6">
-      <p className="text-center">&copy; 2026 Вікторія Натинка. КБ-202. Лабораторна робота №4</p>
+      <p className="text-center">&copy; 2026 Вікторія Натинка. КБ-202. Лабораторна робота №5</p>
 
       <details className="max-w-3xl mx-auto mt-3">
         <summary className="cursor-pointer text-center hover:text-white">
