@@ -28,6 +28,8 @@
     box-sizing: border-box;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -63,6 +65,34 @@ a:focus { outline: 2px solid #f59e0b; }
     cursor: pointer;
 }
 #theme-toggle:hover { background: rgba(255, 255, 255, 0.2); }
+
+/* меню навігації */
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: var(--card-bg);
+    border-bottom: 2px solid var(--border);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.main-nav a {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--link);
+    transition: background 0.2s, color 0.2s;
+}
+.main-nav a:hover {
+    background: var(--link);
+    color: var(--card-bg);
+    text-decoration: none;
+}
+section[id] { scroll-margin-top: 70px; }
 
 .page {
     display: flex;
